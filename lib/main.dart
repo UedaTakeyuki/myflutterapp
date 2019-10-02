@@ -1,20 +1,24 @@
-import 'dart:ui' as prefix0;
-
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-  home: Scaffold(
-    appBar: AppBar(
-      title: Text(
-        "Keroyon",
-        style: TextStyle(
-          fontFamily: "Parisienne",
+  home: Home()
+));
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Keroyon",
+          style: TextStyle(
+            fontFamily: "Parisienne",
+          ),
         ),
+        centerTitle: true,
+        backgroundColor: Colors.teal[900],
       ),
-      centerTitle: true,
-      backgroundColor: Colors.teal[900],
-    ),
-    body: Center(
+      body: Center(
         child: Text(
           "ばははーい",
           style: TextStyle(
@@ -24,11 +28,12 @@ void main() => runApp(MaterialApp(
             color: Colors.grey[600],
           ),
         ),
-    ),
-    floatingActionButton: FloatingActionButton(
-      onPressed: () {},
-      child: Text("click"),
-      backgroundColor: Colors.teal[900],
-    ),
-  ),
-));
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Text("click me"),
+        backgroundColor: Colors.teal[900],
+      ),
+    );
+  }
+}
