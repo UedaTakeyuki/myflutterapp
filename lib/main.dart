@@ -19,14 +19,11 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.teal[900],
       ),
       body: Center(
-        child: Text(
-          "ばははーい",
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.grey[600],
-          ),
+        child: RaisedButton(
+          onPressed: () {
+            print("you press me");
+          },
+          child: Text('click me'),
         ),
       ),
       floatingActionButton: FloatingActionButton(
