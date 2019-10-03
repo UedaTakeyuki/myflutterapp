@@ -18,13 +18,10 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.teal[900],
       ),
-      body: Center(
-        child: RaisedButton(
-          onPressed: () {
-            print("you press me");
-          },
-          child: Text('click me'),
-        ),
+      body: Container(
+        padding: EdgeInsets.all(20.0),
+        color: Colors.grey[400],
+        child: Text('hello'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
